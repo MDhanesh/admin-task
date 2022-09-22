@@ -592,7 +592,7 @@ export default function Table() {
               >
                 Cancel
               </button>
-              <Link className="btn btn-primary" href="login.html" to="/login">
+              <Link className="btn btn-primary" to="/login">
                 Logout
               </Link>
             </div>
