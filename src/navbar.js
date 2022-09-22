@@ -3,6 +3,7 @@ import undraw_profile from "./img/undraw_profile.svg";
 import undraw_profile_3 from "./img/undraw_profile_3.svg";
 import undraw_profile_1 from "./img/undraw_profile_1.svg";
 import undraw_profile_2 from "./img/undraw_profile_2.svg";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
@@ -278,15 +279,16 @@ export default function Navbar() {
                 Activity Log
               </a>
               <div className="dropdown-divider"></div>
-              <a
+              <Link
                 className="dropdown-item"
                 href="#"
+                to="/login"
                 data-toggle="modal"
                 data-target="#logoutModal"
               >
                 <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                 Logout
-              </a>
+              </Link>
             </div>
           </li>
         </ul>

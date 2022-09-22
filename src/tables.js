@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
@@ -591,9 +592,9 @@ export default function Table() {
               >
                 Cancel
               </button>
-              <a className="btn btn-primary" href="login.html">
+              <Link className="btn btn-primary" href="login.html" to="/login">
                 Logout
-              </a>
+              </Link>
             </div>
           </div>
         </div>
