@@ -58,6 +58,7 @@ export default function Animation() {
                               id="navbarDropdown"
                               role="button"
                               data-toggle="dropdown"
+                              data-bs-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
                             >
@@ -117,6 +118,7 @@ export default function Animation() {
                               id="navbarDropdown"
                               role="button"
                               data-toggle="dropdown"
+                              data-bs-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
                             >
@@ -147,6 +149,7 @@ export default function Animation() {
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
+                          data-bs-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
                         >

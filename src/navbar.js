@@ -81,6 +81,7 @@ export default function Navbar() {
               id="alertsDropdown"
               role="button"
               data-toggle="dropdown"
+              data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
@@ -147,6 +148,7 @@ export default function Navbar() {
               id="messagesDropdown"
               role="button"
               data-toggle="dropdown"
+              data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
@@ -231,10 +233,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </a>
-              <a
-                className="dropdown-item text-center small text-gray-500"
-                href="#"
-              >
+              <a className="dropdown-item text-center small text-gray-500">
                 Read More Messages
               </a>
             </div>
@@ -246,10 +245,10 @@ export default function Navbar() {
           <li className="nav-item dropdown no-arrow">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
               id="userDropdown"
               role="button"
               data-toggle="dropdown"
+              data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
@@ -266,22 +265,21 @@ export default function Navbar() {
               className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
               aria-labelledby="userDropdown"
             >
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item">
                 <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                 Profile
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item">
                 <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                 Settings
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item">
                 <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
               </a>
               <div className="dropdown-divider"></div>
               <Link
                 className="dropdown-item"
-                href="#"
                 to="/login"
                 data-toggle="modal"
                 data-target="#logoutModal"

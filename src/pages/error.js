@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../navbar";
 import Sidebar from "../sidebar";
 export default function Error() {
@@ -26,7 +27,7 @@ export default function Error() {
                 <p className="text-gray-500 mb-0">
                   It looks like you found a glitch in the matrix...
                 </p>
-                <a href="index.html">&larr; Back to Dashboard</a>
+                <Link to="/">&larr; Back to Dashboard</Link>
               </div>
             </div>
             {/* <!-- /.container-fluid --> */}

@@ -96,6 +96,7 @@ export default function Others() {
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
+                          data-bs-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
                         >

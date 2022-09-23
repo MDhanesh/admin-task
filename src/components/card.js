@@ -168,6 +168,7 @@ export default function Cards() {
                           role="button"
                           id="dropdownMenuLink"
                           data-toggle="dropdown"
+                          data-bs-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
                         >
@@ -210,6 +211,7 @@ export default function Cards() {
                       href="#collapseCardExample"
                       className="d-block card-header py-3"
                       data-toggle="collapse"
+                      data-bs-toggle="collapse"
                       role="button"
                       aria-expanded="true"
                       aria-controls="collapseCardExample"

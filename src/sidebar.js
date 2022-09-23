@@ -13,7 +13,6 @@ export default function Sidebar() {
         {/* <!-- Sidebar - Brand --> */}
         <Link
           className="sidebar-brand d-flex align-items-center justify-content-center"
-          href="index.html"
           to="/"
         >
           <div className="sidebar-brand-icon rotate-n-15">
@@ -29,7 +28,7 @@ export default function Sidebar() {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li className="nav-item active">
-          <Link className="nav-link" to="/" usehref="dashboard.js">
+          <Link className="nav-link" to="/">
             <i className="fas fa-fw fa-tachometer-alt"></i>
 
             <span>Dashboard</span>
@@ -45,8 +44,9 @@ export default function Sidebar() {
         {/* <!-- Nav Item - Pages Collapse Menu --> */}
         <li className="nav-item">
           <a
-            className="nav-link collapsed"
-            href="#"
+            className="nav-link collapsed "
+            href="#collapseTwo"
+            data-bs-toggle="collapse"
             data-toggle="collapse"
             data-target="#collapseTwo"
             aria-expanded="true"
@@ -61,9 +61,12 @@ export default function Sidebar() {
             aria-labelledby="headingTwo"
             data-parent="#accordionSidebar"
           >
-            <div className="bg-white py-2 collapse-inner rounded">
+            <div
+              className="bg-white py-2 collapse-inner rounded"
+              id="collapseTwo"
+            >
               <h6 className="collapse-header">Custom Components:</h6>
-              <Link className="collapse-item" usehref="button.js" to="/button">
+              <Link className="collapse-item" to="/button">
                 Buttons
               </Link>
               <Link className="collapse-item" to="/cards">
@@ -75,9 +78,10 @@ export default function Sidebar() {
 
         {/* <!-- Nav Item - Utilities Collapse Menu --> */}
         <li className="nav-item">
-          <Link
+          <a
             className="nav-link collapsed"
-            href="#"
+            data-bs-toggle="collapse"
+            href="#collapseUtilities"
             data-toggle="collapse"
             data-target="#collapseUtilities"
             aria-expanded="true"
@@ -85,42 +89,29 @@ export default function Sidebar() {
           >
             <i className="fas fa-fw fa-wrench"></i>
             <span>Utilities</span>
-          </Link>
+          </a>
           <div
             id="collapseUtilities"
             className="collapse"
             aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
-            <div className="bg-white py-2 collapse-inner rounded">
+            <div
+              className="bg-white py-2 collapse-inner rounded"
+              id="collapseUtilities"
+            >
               <h6 className="collapse-header">Custom Utilities:</h6>
-              <Link
-                className="collapse-item"
-                href="utilities-color.html"
-                to="/colors"
-              >
+              <Link className="collapse-item" to="/colors">
                 Colors
               </Link>
-              <Link
-                className="collapse-item"
-                href="utilities-border.html"
-                to="/border"
-              >
+              <Link className="collapse-item" to="/border">
                 Borders
               </Link>
-              <Link
-                className="collapse-item"
-                href="utilities-animation.html"
-                to="/animations"
-              >
+              <Link className="collapse-item" to="/animations">
                 Animations
               </Link>
 
-              <Link
-                className="collapse-item"
-                href="utilities-other.html"
-                to="/other"
-              >
+              <Link className="collapse-item" to="/other">
                 Other
               </Link>
             </div>
@@ -135,9 +126,10 @@ export default function Sidebar() {
 
         {/* <!-- Nav Item - Pages Collapse Menu --> */}
         <li className="nav-item">
-          <Link
+          <a
             className="nav-link collapsed"
-            href={"#"}
+            href="#collapsePages"
+            data-bs-toggle="collapse"
             data-toggle="collapse"
             data-target="#collapsePages"
             aria-expanded="true"
@@ -145,41 +137,36 @@ export default function Sidebar() {
           >
             <i className="fas fa-fw fa-folder"></i>
             <span>Pages</span>
-          </Link>
+          </a>
           <div
             id="collapsePages"
             className="collapse"
             aria-labelledby="headingPages"
             data-parent="#accordionSidebar"
           >
-            <div className="bg-white py-2 collapse-inner rounded">
+            <div
+              className="bg-white py-2 collapse-inner rounded"
+              id="collapsePages"
+            >
               <h6 className="collapse-header">Login Screens:</h6>
-              <Link className="collapse-item" href="login.html" to="/login">
+              <Link className="collapse-item" to="/login">
                 Login
               </Link>
 
-              <Link
-                className="collapse-item"
-                href="register.html"
-                to="/register"
-              >
+              <Link className="collapse-item" to="/register">
                 Register
               </Link>
 
-              <Link
-                className="collapse-item"
-                href="forgot-password.html"
-                to="/forgot"
-              >
+              <Link className="collapse-item" to="/forgot">
                 Forgot password
               </Link>
 
               <div className="collapse-divider"></div>
               <h6 className="collapse-header">Other Pages:</h6>
-              <Link className="collapse-item" href="404.html" to="/error">
+              <Link className="collapse-item" to="/error">
                 404 Page
               </Link>
-              <Link className="collapse-item" href="blank.html" to="/blank">
+              <Link className="collapse-item" to="/blank">
                 Blank Page
               </Link>
             </div>
@@ -188,7 +175,7 @@ export default function Sidebar() {
 
         {/* <!-- Nav Item - Charts --> */}
         <li className="nav-item">
-          <Link className="nav-link" href="charts.html" to="/chart">
+          <Link className="nav-link" to="/chart">
             <i className="fas fa-fw fa-chart-area"></i>
 
             <span>Charts</span>
@@ -197,7 +184,7 @@ export default function Sidebar() {
 
         {/* <!-- Nav Item - Tables --> */}
         <li className="nav-item">
-          <Link className="nav-link" to="/Table" href="tables.html">
+          <Link className="nav-link" to="/Table">
             <i className="fas fa-fw fa-table"></i>
 
             <span>Tables</span>
