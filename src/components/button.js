@@ -4,7 +4,7 @@ import Sidebar from "../sidebar";
 
 export default function Button() {
   return (
-    <div id="page-top ">
+    <div id="page-top">
       {/* <!-- Page Wrapper --> */}
       <div id="wrapper">
         <Sidebar />
@@ -237,7 +237,7 @@ export default function Button() {
       {/* <!-- End of Page Wrapper --> */}
 
       {/* <!-- Scroll to Top Button--> */}
-      <a className="scroll-to-top rounded" href="#page-top">
+      <a className="scroll-to-top rounded d-inline" href="#page-top">
         <i className="fas fa-angle-up"></i>
       </a>
 

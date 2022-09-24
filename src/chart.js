@@ -384,7 +384,7 @@ export default function Charts() {
       {/* <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button--> */}
-      <a className="scroll-to-top rounded" href="#page-top">
+      <a className="scroll-to-top rounded d-inline" href="#page-top">
         <i className="fas fa-angle-up"></i>
       </a>
 
